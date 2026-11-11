@@ -48,3 +48,4 @@ This project includes a ready-to-deploy `render.yaml` blueprint.
 - **html-to-image** for high-resolution downloadable cards & certificates
 - **Web Audio API** for synthesized festive ambient melodies and bell chimes (100% offline)
 - **LocalStorage API** for saving quiz progress, coupons, and sister's reply note
+
