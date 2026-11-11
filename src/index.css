@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #0b0f19;
+    background-image: 
+      radial-gradient(at 0% 0%, rgba(245, 158, 11, 0.12) 0px, transparent 50%),
+      radial-gradient(at 100% 0%, rgba(225, 29, 72, 0.12) 0px, transparent 50%),
+      radial-gradient(at 50% 100%, rgba(109, 40, 217, 0.15) 0px, transparent 50%);
+    min-height: 100vh;
+  }
+}
+
+/* Custom festive & cartoon styling */
+.cartoon-card {
+  border: 3px solid #1e293b;
+  box-shadow: 4px 6px 0px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cartoon-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 6px 10px 0px rgba(245, 158, 11, 0.4);
+}
+
+.cartoon-card-gold {
+  border: 3px solid #f59e0b;
+  box-shadow: 5px 7px 0px rgba(217, 119, 6, 0.7);
+}
+
+.cartoon-card-rose {
+  border: 3px solid #f43f5e;
+  box-shadow: 5px 7px 0px rgba(225, 29, 72, 0.7);
+}
+
+.cartoon-card-purple {
+  border: 3px solid #8b5cf6;
+  box-shadow: 5px 7px 0px rgba(109, 40, 217, 0.7);
+}
+
+.cartoon-btn {
+  border: 2px solid #000;
+  box-shadow: 3px 3px 0px #000;
+  transition: all 0.15s ease;
+}
+
+.cartoon-btn:active {
+  transform: translate(2px, 2px);
+  box-shadow: 1px 1px 0px #000;
+}
+
+/* Floating Diya Glow */
+.diya-glow {
+  filter: drop-shadow(0 0 16px rgba(251, 191, 36, 0.85)) drop-shadow(0 0 35px rgba(245, 158, 11, 0.6));
+}
+
+.kumkum-glow {
+  filter: drop-shadow(0 0 16px rgba(225, 29, 72, 0.85)) drop-shadow(0 0 30px rgba(244, 63, 94, 0.5));
+}
+
+/* Washi Tape styling for polaroids */
+.washi-tape {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-2deg);
+  width: 90px;
+  height: 24px;
+  background-color: rgba(254, 240, 138, 0.8);
+  border-left: 2px dashed rgba(202, 138, 4, 0.4);
+  border-right: 2px dashed rgba(202, 138, 4, 0.4);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+  z-index: 10;
+}
+
+/* Marigold garlands */
+.garland-border {
+  background-image: radial-gradient(#f59e0b 25%, transparent 25%), radial-gradient(#ea580c 25%, transparent 25%);
+  background-size: 24px 24px;
+  background-position: 0 0, 12px 12px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+  background: #d97706;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #f59e0b;
+}
+
